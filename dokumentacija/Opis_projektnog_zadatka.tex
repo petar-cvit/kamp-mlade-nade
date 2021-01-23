@@ -1,0 +1,40 @@
+\chapter{Opis projektnog zadatka}
+		
+		Cilj ovog projekta je razviti programsku podršku za stvaranje web aplikacije u sklopu „Kampa mlade nade“. Kamp nudi svojim korisnicima mogućnost pregledavanja dnevnih i tjednih aktivnosti putem rasporeda koji je personaliziran za svaku pojedinu vrstu korisnika.                    Na taj način će kamp omogućiti korisnicima da bez brige obavljaju svakodnevne grupne aktivnosti koje su predvođene odgovarajućim animatorima, koji također imaju personalizirane rasporede s dnevnim obavezama.
+    Prilikom pokretanja aplikacije prikazuje se stranica s osnovnim informacijama o kampu, na kojoj je također moguće kreirati račun s ulogama sudionika ili animatora. Jednom kada korisnik kreira račun, umjesto početne stranice pojavljuje se sat koji odbrojava vrijeme preostalo do početka kampa. Početkom kampa svaki od korisnika može vidjeti svoj raspored aktivnosti  te pripadnost grupi, u koju su dodijeljeni od strane organizatora kampa. Tijekom kampa i na kraju, moguće je ostaviti ocjenu aktivnosti te cjelokupan dojam o kampu.
+
+    Kao što smo rekli, postoje 2 tipa korisnika. To su animatori i sudionici. Za stvaranje računa sudionike, potrebno je na početnoj stranici odabrati gumb „Sign up“  te predati sljedeće podatke:
+
+    \begin{itemize}
+        \item ime
+        \item prezime
+        \item broj mobitela
+        \item email adresa
+        \item datum i godina rođenja
+        \item motivacijsko pismo
+        \item broj mobitela odgovarajuće osobe (u slučaju da je sudionik mlađi od 18 godina)
+    \end{itemize}
+    \pagebreak
+    Isto vrijedi i za animatore. Jednom kada je prijava zaprimljena, korisnik na mail dobiva mail uz pomoć kojega verificira račun i email adresu. Klikom na link koji se nalazi u mail-u, korisnik dolazi na novu stranicu web aplikacije na kojoj upisuje lozinku za zaštitu računa. Odabirom željene lozinke i klikom na gumb „Save“ završen je proces registracije i korisniku je stvoren račun unutar web aplikacije.
+
+    Registrirani korisnik (\underline{sudionik} ili \underline{animator}) može pregledati, mijenjati osobne podatke i izbrisati svoj korisnički račun. Osim toga, može u svakom trenutku za vrijeme trajanja kampa otvoriti i pregledati svoj personalizirani raspored aktivnosti.\\
+    \\
+    \underline{Sudionik} prije početka kampa vidi samo sat koji odbrojava vrijeme do početka kampa te kontakt organizatora, a tek nakon početka kampa mogu vidjeti raspored aktivnosti koji je ujedno i glavna značajka ove web aplikacije. Uz to mogu vidjeti popis aktivnosti na kojima su do sada sudjelovali, te iste aktivnosti ocijeniti ocjenama od 1 do 10. Osim rasporeda aktivnosti, mogu vidjeti informacije o grupi u koju su dodijeljeni te podatke o animatorima koji su zaposleni na kampu. Tijekom trajanja kampa moguće je također dobiti uvid o prošlim aktivnostima na kojima je sudionik prisustvovao, te ih ocijeniti ocjenama od 1 do 10. Po završetku kampa dodatno je omogućeno davanje ocjene cjelokupnog dojma.\\
+    \\
+    Uz sudionika postoje još 2 vrste korisnika, a to su:
+    \begin{itemize}
+        \item organizator
+        \item animator\\
+    \end{itemize}
+    
+    
+
+    \underline{Animator} kampa kroz aplikaciju ima pristup popisu svih grupa koje je stvorio organizator, kao i popis svih članova svake grupe zajedno s njihovim kontakt podatcima. Isto tako, omogućene su iste akcije povezane s uvidom u prošle aktivnosti i ocjenjivanje istih, kao i kod sudionika.
+    \\
+    \\
+    \underline{Organizator} sustava ima najveće ovlasti. Za početak organizator kampa određuje početak održavanja događaja. Za vrijeme registracije sudionika i animatora, organizator zaprima sve pokušaje prijave, te ako procijeni da je prijava valjana, prima korisnika u sustav te u bazi podataka stvara račun s podatcima predanima u obrascu zajedno sa šifrom koju je korisnik specificirao. Na početku kampa dužnost organizatora jest na temelju broja prijavljenih korisnika odrediti (subjektivno) optimalan broj grupa u koje će se podijeliti sudionici. Jednom kada organizator to učini, izvršava se nasumična raspodjela sudionika po grupama, ali su naravno moguće naknadne izmjene i premještanje sudionika iz grupe u grupu. Nakon formiranja grupa, slijedi popunjavanje rasporeda s aktivnostima koje također provodi organizator kampa. Taj proces se sastoji od određivanja vremenskog početka i kraja pojedine aktivnosti te pridruživanja odgovarajućeg animatora za aktivnost. Pri tome je bitno paziti da ne dođe do nekakvih preklapanja između grupa i animatore, o čemu će nas sustav upozoriti ili neće dopustiti da do takve situacije uopće i dođe. Prilikom završetka dodavanja aktivnosti treba dodatno provjeriti je jesu li sve grupe sudjelovale na svakoj aktivnosti točno jednom. Svaki dan postoje tri aktivnosti koje su fiksne, a to su doručak u 8 sati, ručak u 12 sati i večera u 18 sati. Na tim aktivnostima sudjeluju sve grupe i svi animatori, te traju 1 sat. Tijekom završetka kampa organizatori mogu vidjeti popis svih povratnih ocjena po aktivnostima te ih moraju moći pretraživati prema sljedećim atributima: korisnik, grupa i/ili aktivnost. Po završetku kampa dodatne je moguće pregledati i ocjene cjelokupnog dojma svih korisnika.
+
+		
+		\eject
+		
+	

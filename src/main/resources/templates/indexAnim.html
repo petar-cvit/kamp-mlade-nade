@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="div-header">
+    <p class="web-title">KAMP MLADE NADE</p>
+</div>
+
+<h2>List of Animators</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</TH>
+    </tr>
+
+    <tr th:each="animator : ${animators}">
+        <td th:text="${animator.name}">Name</td>
+        <td th:text="${animator.surname}">Surname</td>
+        <td th:text="${animator.email}">Email</td>
+    </tr>
+</table>
+
+</body>
+</html>

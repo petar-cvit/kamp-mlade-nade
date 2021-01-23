@@ -1,0 +1,10 @@
+DROP TABLE activity CASCADE;
+DROP TABLE activity_animator CASCADE;
+DROP TABLE activity_group CASCADE;
+DROP TABLE activity_in_time CASCADE;
+DROP TABLE animator CASCADE;
+DROP TABLE camp_group CASCADE;
+DROP TABLE participant CASCADE;
+DROP TABLE comment CASCADE;
+DROP TABLE person CASCADE;
+DROP TABLE hibernate_sequences;
